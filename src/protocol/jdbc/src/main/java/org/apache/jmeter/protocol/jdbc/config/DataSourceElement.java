@@ -241,7 +241,7 @@ public class DataSourceElement extends AbstractTestElement
             dataSource.setConnectionProperties(connectionProperties);
         }
         dataSource.setRollbackOnReturn(false);
-        dataSource.setMaxIdle(poolSize);
+        dataSource.setMaxIdle(0);
         dataSource.setMaxTotal(poolSize);
         dataSource.setMaxWaitMillis(Long.parseLong(getTimeout()));
 
